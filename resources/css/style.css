@@ -68,6 +68,10 @@ header-name{
    margin-left: 1.5rem;
    height: 3rem; 
 }
+
+header .logo .header-name{
+	color: #FFD700 ;
+}
 /*navigation*/
 nav{
   align-self: center; 
