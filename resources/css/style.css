@@ -441,13 +441,21 @@ footer nav, .desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mains
 /* Section 2 - mobile display on side stories */
 @media only screen and (max-width: 450px) {
 .multi-container {
-    padding: 1rem 1rem 2rem 1rem;
-    margin: 0;
+   width:100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
   }
 
  #mobile-pic {
-    display: block;
-    width: 95%;
+     width:100%;
+     height: auto;
+     display:flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     padding: 1rem 1rem .5rem 1rem;
   }
 
 #mobile-pic img {
@@ -455,6 +463,11 @@ footer nav, .desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mains
 	
   }
 
+#professor{
+	display: block;
+	width: 100%;
+}
+  
 .information .description {
     display: block;
     margin-bottom: 1rem;
