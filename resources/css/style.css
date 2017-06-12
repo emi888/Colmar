@@ -97,6 +97,12 @@ a{
   display: none;
 }
 
+#mobile-pic{
+  display: none;
+}
+
+
+
 /*Section 1 Learn something new*/
 .banner{
 	position: relative;
@@ -114,14 +120,14 @@ a{
     display: inline-block;
 }
 
-.side-text {
+.side-text2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%
 }
 
-.side-text h1 {
+.side-text2 h1 {
   color: white;
   margin: 0.5rem 0; 
   padding: 0.4rem 0;
@@ -129,7 +135,7 @@ a{
   font-weight: normal;
 }
 
-.side-text h3 {
+.side-text2 h3 {
   color: white;
   margin: 0.5rem 0; 
   padding: 0.4rem 0;
@@ -147,6 +153,8 @@ a{
   padding-right: 1rem;
   margin: 1rem 0;
 }
+
+
 
 /*Section 2 Main story section*/
 
@@ -248,11 +256,6 @@ a{
 
 .description a {
   color: blue;
-}
-
-
-#mobile-pic{
-  display:none;
 }
 
 /*Section 3 Start Learning */
@@ -373,3 +376,164 @@ footer a {
   padding-right: 1rem;
 }
 
+/* Mobile devices*/
+@media only screen and (max-width:625px) {
+
+/* below elements that will be turn off from the desktop version of the site */
+footer nav, .desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mainstory-section h5, .mainstory-section p, .mainstory-section img,
+.exhibition, .reimagine-urban p, .reimagine-urban h4, .reimagine-urban img,.fisma-newyork, .side-article, .side-text, .side-pic, .course-container img,
+.course-container p, .desktop, .social{
+  display:none;
+}
+
+/* menu bar in mobile version changes into icons */
+.mobile-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+ 
+.mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+.mobile-nav li {
+    padding: 0;
+  }
+ 
+/* changes to the main-section area */
+
+.button{
+  width:70%;
+  align-items: center;
+}
+
+.banner{
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #e7e4e5;
+  align-items: center;
+}
+
+.side-text2{
+  width:90%;
+  height:auto;
+}
+
+.banner img{
+  width: 100%;
+  height: auto;
+  padding:0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Section 2 - mobile display on side stories */
+@media only screen and (max-width: 450px) {
+.multi-container {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .mainstory-section {
+    display: block;
+  }
+ #mobile-pic {
+    display: block;
+    width: 95%;
+  }
+
+#mobile-pic img {
+    width: 100%;
+  }
+
+.information .description {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+/*
+information .description {
+   display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  width: 100%;
+  height: auto;
+  }
+
+ 
+  .sidestoryimage highlighted {
+     display: flex;
+    width: 95%;
+	flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem 1rem .5rem 1rem;
+  }
+
+*/
+
+/* Section 3 - mobile display on Courses */
+
+.courses-pack{
+  flex-flow: column;
+}
+
+.course-container{
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0 0 8px 0;
+}
+
+.course-text{
+  width: 93%;
+  height: auto;
+  padding:16px;
+  color: #909090;
+  transition:font-weight 200ms, color 600ms, background-color 600ms;
+}
+
+.course-text:hover{
+background-color: #D3D3D3;
+color:#303030;
+font-weight: bold;
+}
+
+.courses h3{
+  padding: 2rem 0 1rem 0;
+  margin: 0;
+}
+.course-container a{
+  display:block;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding:0;
+  border: 0;
+  margin 0;
+  width: 100%;
+}
+
+/* changes to thesis section. Detail boxes are removed.*/
+  .reimagine-urban {
+    width: 100%;
+  }
+
+video{
+  width: 90%;
+}
+
+/* footer changes */
+h5{
+  margin:2rem 0 1rem 0;
+}
