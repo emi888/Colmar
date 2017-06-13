@@ -454,10 +454,12 @@ footer a {
  .sidestory {
     padding: 1rem 1rem 2rem 1rem;
     margin: 0;
+	margin-top: 2rem;
   }
   .sidestoryimage {
     display: block;
-	height: 5rem;
+	height: auto;
+	margin-top: 2rem;
   }
 
   .desktop {
@@ -467,7 +469,7 @@ footer a {
   #mobile-pic {
     display: block;
     width: 95%;
-	height: 5rem;
+    
   }
 
   #mobile-pic img {
@@ -527,6 +529,37 @@ footer a {
   height: auto;
 }
 
+  .emanuel {
+    display: none;
+  }
+
+  .side-stories {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .small-art {
+    display: block;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .pic-mobile {
+    display: block;
+    width: 95%;
+  }
+
+  .pic-mobile img {
+    width: 100%;
+  }
+
+  .description-side {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+ 
 
 */
 
