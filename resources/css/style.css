@@ -468,7 +468,8 @@ footer a {
 
   #mobile-pic {
     display: block;
-    width: 95%;
+    width: 250%;
+
     
   }
 
@@ -484,6 +485,7 @@ footer a {
 
   .sidestoryimage highlighted {
     display: none;
+
   }
 
 
