@@ -204,6 +204,8 @@ a{
 
 
 /*Section 2 Side story section*/
+
+
 .sidestory{
   width: 65%;
   display: flex;
@@ -219,7 +221,10 @@ a{
 }
 
 
+
 /*sidestoryimage highlighted*/
+
+
 .highlighted {
   background-color: #D3D3D3;
   padding: 0;
@@ -230,6 +235,10 @@ a{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+
+
+
 
 /*image containing all 3 side stories*/
 
@@ -380,7 +389,7 @@ footer a {
 @media only screen and (max-width:625px) {
 
 /* below elements that will be turn off from the desktop version of the site */
-footer nav, .desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mainstory-section h5, .mainstory-section p, .mainstory-section img,
+.desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mainstory-section h5, .mainstory-section p, .mainstory-section img,
 .exhibition, .reimagine-urban p, .reimagine-urban h4, .reimagine-urban img,.fisma-newyork, .side-article, .side-text, .side-pic, .course-container img,
 .course-container p, .desktop, .social{
   display:none;
@@ -439,40 +448,87 @@ footer nav, .desktop-nav, .logo, .mainstory-section,.mainstory-section h6,.mains
 
 
 /* Section 2 - mobile display on side stories */
-@media only screen and (max-width: 450px) {
-.multi-container {
-   width:100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+
+
+@media only screen and (max-width: 625px) {
+ .sidestory {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .sidestoryimage {
+    display: block;
+	height: 5rem;
   }
 
- #mobile-pic {
-     width:100%;
-     height: auto;
-     display:flex;
-     flex-direction: column;
-     box-sizing: border-box;
-     padding: 1rem 1rem .5rem 1rem;
+  .desktop {
+    display: none;
   }
 
-#mobile-pic img {
+  #mobile-pic {
+    display: block;
+    width: 95%;
+	height: 5rem;
+  }
+
+  #mobile-pic img {
     width: 100%;
 	
   }
 
-#professor{
-	display: block;
-	width: 100%;
-}
-  
-.information .description {
+  .description {
     display: block;
     margin-bottom: 1rem;
   }
 
+  .sidestoryimage highlighted {
+    display: none;
+  }
+
+/*
+@media only screen and (max-width: 625px) {
+.sidestory{
+  width:100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 0;
+}
+
+.sidestoryimage #mobile-pic{
+  width:100%;
+  height: auto;
+  display:flex;
+
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1rem 1rem .5rem 1rem;
+}
+
+.information .description{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  width: 100%;
+  height: auto;
+}
+
+.imageinfo2{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: auto;
+}
+
+
+*/
 
 
 /* Section 3 - mobile display on Courses */
